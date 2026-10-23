@@ -38,6 +38,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=Geist:wght@300..700&family=Geist+Mono:wght@400..600&display=swap">
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
 
+<link rel="preload" as="image" href="media/logo-digital-graphics.webp" fetchpriority="high">
 <link rel="preload" as="image" href="media/trabajos/vinil-vitrinas-farmacia-estacionamiento-25-sm.webp" fetchpriority="high">
 <script>
   /* Marca el documento antes del primer pintado: activa estados iniciales de animación y respeta movimiento reducido */
@@ -58,7 +59,7 @@
   "email": "digitalgraphics_1103@hotmail.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna",
+    "streetAddress": "Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna",
     "addressLocality": "Mérida",
     "addressRegion": "Yucatán",
     "addressCountry": "MX"
@@ -91,7 +92,7 @@
     { "@type": "Question", "name": "¿Instalan en mi local o en mi vehículo?", "acceptedAnswer": { "@type": "Answer", "text": "Sí. Instalamos vinil, gráficos de gran formato y rotulación en locales, vitrinas, fachadas, flotillas y equipos." } },
     { "@type": "Question", "name": "¿Qué tipos de señalamientos fabrican?", "acceptedAnswer": { "@type": "Answer", "text": "Letreros de protección civil, seguridad industrial, patios en maniobras, gasolineras, vialidad, transportes y escuelas." } },
     { "@type": "Question", "name": "¿Atienden empresas y flotillas?", "acceptedAnswer": { "@type": "Answer", "text": "Sí, desde un solo rótulo hasta flotillas completas de camionetas, motocicletas y pipas." } },
-    { "@type": "Question", "name": "¿Dónde están y cómo los contacto?", "acceptedAnswer": { "@type": "Answer", "text": "Oficina de ventas en Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna, Mérida. Taller en Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna. WhatsApp: 999 151 4270." } }
+    { "@type": "Question", "name": "¿Dónde están y cómo los contacto?", "acceptedAnswer": { "@type": "Answer", "text": "Oficina de ventas en Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna, Mérida. WhatsApp: 999 151 4270." } }
   ]
 }
 </script>
@@ -123,7 +124,7 @@
       <span class="spin__cross"></span>
       <span class="spin__ring"></span>
       <span class="spin__ring spin__ring--2"></span>
-      <svg class="spin__mark" width="56" height="56"><use href="#dg-mark"/></svg>
+      <img class="spin__mark" src="media/logo-digital-graphics.webp" width="541" height="267" alt="" decoding="async">
     </div>
     <p class="loader__pct" aria-hidden="true"><span id="loader-pct">0</span><small>%</small></p>
     <div class="loader__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
@@ -136,9 +137,8 @@
 <!-- ═════════ HEADER ═════════ -->
 <header class="header" id="header">
   <div class="header__in">
-    <a class="brand" href="#inicio" aria-label="Digital Graphics, ir al inicio">
-      <svg class="brand__mark" width="40" height="40" aria-hidden="true"><use href="#dg-mark"/></svg>
-      <span class="brand__word"><b>DIGITAL</b><i>GRAPHICS</i></span>
+    <a class="brand brand--logo" href="#inicio" aria-label="Digital Graphics, ir al inicio">
+      <img class="brand__logo" src="media/logo-digital-graphics.webp" width="541" height="267" alt="" decoding="async">
     </a>
 
     <nav class="nav" aria-label="Principal">
@@ -902,7 +902,7 @@
       </div>
       <div class="acc__item" data-reveal style="--i:5">
         <h3><button class="acc__btn" type="button" id="q6" aria-expanded="false" aria-controls="a6">¿Dónde están y cómo los contacto? <i class="ph-bold ph-plus" aria-hidden="true"></i></button></h3>
-        <div class="acc__panel" id="a6" role="region" aria-labelledby="q6"><div><p>Oficina de ventas en Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna, Mérida. Taller en Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna. WhatsApp: 999 151 4270.</p></div></div>
+        <div class="acc__panel" id="a6" role="region" aria-labelledby="q6"><div><p>Oficina de ventas en Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna, Mérida. WhatsApp: 999 151 4270.</p></div></div>
       </div>
     </div>
   </div>
@@ -924,7 +924,7 @@
       <a class="btn btn--ink btn--xl" href="https://wa.me/529991514270?text=Hola%20Digital%20Graphics%2C%20estoy%20listo%20para%20empezar%20mi%20proyecto." target="_blank" rel="noopener" data-magnetic>
         Estoy listo, quiero mi cotización <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i>
       </a>
-      <a class="btn btn--outline-ink btn--xl" href="tel:+529991955346">
+      <a class="btn btn--outline-ink btn--xl" href="tel:+529991514270">
         <i class="ph-bold ph-phone" aria-hidden="true"></i> Llamar ahora
       </a>
     </div>
@@ -947,7 +947,7 @@
         </li>
         <li>
           <span class="clist__ico"><i class="ph-bold ph-phone" aria-hidden="true"></i></span>
-          <div><b>Teléfonos</b><span><a href="tel:+529991955346">(999) 195 53 46</a> y <a href="tel:+529991898940">(999) 189 89 40</a></span></div>
+          <div><b>Teléfono</b><a href="tel:+529991898940">(999) 189 89 40</a></div>
         </li>
         <li>
           <span class="clist__ico"><i class="ph-bold ph-envelope-simple" aria-hidden="true"></i></span>
@@ -956,16 +956,13 @@
       </ul>
 
       <div class="places" data-reveal>
-        <div class="places__tabs" role="tablist" aria-label="Ubicaciones">
-          <button type="button" class="ptab is-active" role="tab" id="tab-oficina" aria-selected="true" aria-controls="place-panel" data-place="oficina">Oficina de ventas</button>
-          <button type="button" class="ptab" role="tab" id="tab-taller" aria-selected="false" aria-controls="place-panel" data-place="taller">Taller</button>
-        </div>
-        <div class="places__panel" id="place-panel" role="tabpanel" aria-labelledby="tab-oficina">
-          <p class="places__addr" id="place-addr">Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna, Mérida, Yucatán.</p>
+        <h3 class="places__title" id="place-title">Oficina de ventas</h3>
+        <div class="places__panel" id="place-panel" role="group" aria-labelledby="place-title">
+          <p class="places__addr" id="place-addr">Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna, Mérida, Yucatán.</p>
           <div class="places__map">
             <iframe id="place-map" title="Mapa de ubicación de Digital Graphics" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="about:blank"></iframe>
           </div>
-          <a class="places__link" id="place-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+21+Diagonal+360+San+Luis+Chuburna+M%C3%A9rida+Yucat%C3%A1n" target="_blank" rel="noopener">Abrir en Google Maps <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a>
+          <a class="places__link" id="place-link" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+19+387+San+Pablo+Uxmal+Chuburna+M%C3%A9rida+Yucat%C3%A1n" target="_blank" rel="noopener">Abrir en Google Maps <i class="ph-bold ph-arrow-up-right" aria-hidden="true"></i></a>
         </div>
       </div>
     </div>
@@ -1055,8 +1052,7 @@
     <address class="footer__col">
       <h3>Contacto</h3>
       <ul>
-        <li><b>Oficina de ventas</b>Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna</li>
-        <li><b>Taller</b>Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna</li>
+        <li><b>Oficina de ventas</b>Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna</li>
         <li><a href="tel:+529991514270">WhatsApp 999 151 4270</a></li>
         <li><a href="mailto:digitalgraphics_1103@hotmail.com">digitalgraphics_1103@hotmail.com</a></li>
       </ul>

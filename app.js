@@ -796,35 +796,12 @@
     });
   }
 
-  /* ---------- Contacto: mapa por pestañas y formulario a WhatsApp ---------- */
+  /* ---------- Contacto: mapa y formulario a WhatsApp ---------- */
   function initContact() {
-    const places = {
-      oficina: { q: 'Calle 21 Diagonal 360, San Luis Chuburna, Mérida, Yucatán, México', text: 'Calle 21 Diag. #360 x 38-A Local 2, Col. San Luis Chuburna, Mérida, Yucatán.' },
-      taller: { q: 'Calle 19 387, San Pablo Uxmal Chuburna, Mérida, Yucatán, México', text: 'Calle 19 #387 x 48 y 48-A, Col. San Pablo Uxmal Chuburna, Mérida, Yucatán.' }
-    };
-    const tabs = $$('.ptab');
     const map = $('#place-map');
-    const addr = $('#place-addr');
-    const link = $('#place-link');
-    const panel = $('#place-panel');
-    let current = 'oficina';
-    let mapOn = false;
-    const embed = k => `https://www.google.com/maps?q=${encodeURIComponent(places[k].q)}&output=embed`;
-    const show = k => {
-      current = k;
-      tabs.forEach(t => {
-        const on = t.dataset.place === k;
-        t.classList.toggle('is-active', on);
-        t.setAttribute('aria-selected', String(on));
-      });
-      panel.setAttribute('aria-labelledby', 'tab-' + k);
-      addr.textContent = places[k].text;
-      link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(places[k].q)}`;
-      if (mapOn) map.src = embed(k);
-    };
-    tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.place)));
+    const embed = `https://www.google.com/maps?q=${encodeURIComponent('Calle 19 387, San Pablo Uxmal Chuburna, Mérida, Yucatán, México')}&output=embed`;
     new IntersectionObserver((es, io) => {
-      if (es[0].isIntersecting) { mapOn = true; map.src = embed(current); io.disconnect(); }
+      if (es[0].isIntersecting) { map.src = embed; io.disconnect(); }
     }, { rootMargin: '500px 0px' }).observe($('.places'));
 
     /* Formulario */
